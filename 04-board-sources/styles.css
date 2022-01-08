@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1b1b1b;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+}
+.square:hover{
+  transition-duration: 0s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+@keyframes pulseLeave {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(.5)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
