@@ -31,6 +31,7 @@ body {
 
 .item {
   width: 150px;
+  max-width: 100%;
   height: 66px;
   border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
@@ -52,8 +53,11 @@ body {
 }
 
 .placeholder {
-  width: 150px;
+  width: 170px;
+  padding: 10px;
+  border: 1px solid transparent;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .start {
@@ -83,7 +87,8 @@ body {
 }
 
 .hovered {
-  border-top: 2px solid blueviolet;
+  border: 1px dashed #178caf;
+  background: rgba(34, 134, 205, .25);
 }
 
 
